@@ -1,0 +1,12 @@
+.DS_Store
+.sass-cache
+.DS_Store
+.tmp
+.history
+.idea
+node_modules
+tmp
+npm-debug.*
+
+/public
+/tmp

@@ -1,0 +1,19 @@
+'use strict'
+
+wk.load('./workflow/tasks/assets.js', true)
+wk.load('./workflow/tasks/template/template.js')
+wk.load('./workflow/asset-builder/webpack/tasks/webpack.js', true)
+
+desc(['assets:resolve', 'clean', 'assets:move', 'webpack:compile'].join(' '))
+task('compile', [ 'assets:resolve', 'assets:move', 'webpack' ])
+
+desc(['assets:resolve', 'assets:move', 'webpack:watch'].join(' '))
+task('watch', [ 'assets:resolve', 'assets:move', 'webpack --watch' ])
+
+desc(['assets:resolve', 'assets:move', 'webpack:build'].join(' '))
+task('build', [ 'assets:resolve', 'assets:move', 'webpack --compress' ])
+
+desc(['assets:resolve', 'clean', 'assets:move', 'webpack:server'].join(' '))
+task('server', [ 'assets:resolve', 'clean', 'assets:move', 'webpack --server' ])
+
+task('start', [ 'server' ])
