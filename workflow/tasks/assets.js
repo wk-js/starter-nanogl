@@ -1,7 +1,7 @@
 'use strict'
 
 const Project       = require('../lib/project').getActive()
-const AssetPipeline = require('../lib/asset-pipeline')
+const AssetPipeline = require('asset-pipeline')
 
 desc('[Asset] Generate asset key')
 task('generate_key', function() {

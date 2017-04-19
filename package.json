@@ -1,5 +1,5 @@
 {
-  "name": "valerian-asteroids",
+  "name": "starter-nanogl",
   "version": "0.0.1",
   "description": "",
   "author": "Christophe MASSOLIN",
@@ -17,12 +17,15 @@
     "stylus-loader": "^2.4.0",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0",
-    "when": "^3.7.7"
+    "when": "^3.7.7",
+    "asset-pipeline": "wk-js/asset-pipeline"
   },
   "dependencies": {
+    "gl-matrix": "^2.3.2",
     "gsap": "^1.19.1",
     "nanogl": "^0.3.2",
     "nanogl-camera": "^0.1.4",
-    "nanogl-node": "^0.1.2"
+    "nanogl-node": "^0.1.2",
+    "nanogl-renderer": "^0.1.3"
   }
 }

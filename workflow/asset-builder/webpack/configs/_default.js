@@ -63,7 +63,7 @@ module.exports = function( options ) {
 
   config.watch   = !!options.watch
   config.cache   = true
-  config.context = path.join(process.cwd(), 'app')
+  config.context = ABSOLUTE_SRC_PATH
   if (options.sourcemap) config.devtool = 'source-map'
 
   const entries = {}
@@ -87,7 +87,8 @@ module.exports = function( options ) {
       "devices":  ABSOLUTE_SRC_PATH + "/scripts/devices",
       "lib":  ABSOLUTE_SRC_PATH + "/scripts/lib",
       "sections":  ABSOLUTE_SRC_PATH + "/scripts/sections",
-      "vendor":  ABSOLUTE_SRC_PATH + "/scripts/vendor"
+      "vendor":  ABSOLUTE_SRC_PATH + "/scripts/vendor",
+      "gl": ABSOLUTE_SRC_PATH + "/scripts/gl"
     }
   }
 

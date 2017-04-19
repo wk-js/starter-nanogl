@@ -2,7 +2,7 @@
 
 module.exports = function(Project) {
 
-  const AP = require('../lib/asset-pipeline')
+  const AP = require('asset-pipeline')
 
   const AssetPipeline   = new AP
   Project.AssetPipeline = AssetPipeline
