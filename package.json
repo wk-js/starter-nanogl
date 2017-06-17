@@ -5,27 +5,28 @@
   "author": "Christophe MASSOLIN",
   "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "extract-text-webpack-plugin": "^2.0.0-rc.2",
+    "asset-pipeline": "wk-js/asset-pipeline",
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.22.0",
+    "extract-text-webpack-plugin": "2.0.0-rc.2",
     "filelist": "0.0.6",
-    "fs-extra": "^1.0.0",
-    "lodash.template": "^4.4.0",
-    "raw-loader": "^0.5.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0",
-    "when": "^3.7.7",
-    "asset-pipeline": "wk-js/asset-pipeline"
+    "fs-extra": "1.0.0",
+    "lodash.template": "4.4.0",
+    "nanogl-template": "1.0.3",
+    "raw-loader": "0.5.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "2.4.0",
+    "transform-loader": "0.2.4",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0",
+    "when": "3.7.7"
   },
   "dependencies": {
-    "gl-matrix": "^2.3.2",
-    "gsap": "^1.19.1",
-    "nanogl": "^0.3.2",
-    "nanogl-camera": "^0.1.4",
-    "nanogl-node": "^0.1.2",
-    "nanogl-renderer": "^0.1.3"
+    "gl-matrix": "2.3.2",
+    "nanogl": "0.3.2",
+    "nanogl-camera": "0.1.4",
+    "nanogl-node": "0.1.2",
+    "nanogl-renderer": "0.1.3"
   }
 }
