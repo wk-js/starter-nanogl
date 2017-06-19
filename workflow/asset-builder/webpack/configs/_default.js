@@ -123,7 +123,7 @@ module.exports = function( options ) {
       {
         test: /\.(glsl|vert|frag)$/,
         include: config.context,
-        use: [ EJS_LOADER ]
+        use: [ 'transform-loader?nanogl-template' ]
       }
     ]
   }

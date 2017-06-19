@@ -27,7 +27,7 @@ wk
 
 ### GLSL
 
-`.glsl`, `.vert` and `.frag` files use EJS loader. You can use every method integrated to EJS in your shader.
+`.glsl`, `.vert` and `.frag` files use nanogl-template transform.
 
 `demo.glsl`
 ```glsl
@@ -38,7 +38,7 @@ void demo( in vec3 color ) {
 
 `basic.frag`
 ```glsl
-<%= include('./demo.glsl') %>
+{{ require('./demo.glsl') }}
 
 void main() {
   gl_FragColor = vec4(demo(vec3(1.0, 0.0, 0.0)), 1.0);
